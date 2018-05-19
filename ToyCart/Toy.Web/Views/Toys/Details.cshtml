@@ -1,0 +1,22 @@
+﻿@model Toy
+
+<div class="row"></div>
+<div class="row">
+<div class="col-sm-6 col-lg-64 ol-md-6">
+    <div class="thumbnail">
+        <img alt="@Model.ToyName" src="~/imgToys/@Model.ImagePath" 
+             style="width:580px; height:450px;">
+        <div class="caption-full">
+            <h3 class="pull-right">@Model.UnitPrice.ToString("c")</h3>
+            <h3>
+                <a href="#">@Model.ToyName</a>
+            </h3>
+            <p>@Model.Description</p>
+            <p class="button">
+                <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+                   asp-route-toyId="@Model.ToyID">Add to cart</a>
+            </p>
+        </div>
+    </div>
+</div>
+</div>

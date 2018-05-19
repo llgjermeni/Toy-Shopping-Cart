@@ -1,0 +1,23 @@
+﻿@model ToysViewModel
+
+@ViewBag.CurrentCategory
+<p></p>
+
+@foreach (var toy in Model.Toys)
+{
+
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="~/imgToys/@toy.ImagePath" style="width:180px; height:150px;" alt="">
+            <div class="caption">
+                <h3 class="pull-right">@toy.UnitPrice.ToString("c")</h3>
+                <h3>
+                    <a asp-controller="Toys" asp-action="Details" asp-route-id="@toy.ToyID">@toy.ToyName</a>
+                </h3>
+            </div>
+
+        </div>
+    </div>
+}
+
+
