@@ -1,5 +1,5 @@
 # Toy Shopping Cart
-This app show how to create a simple shopping.
+This app is a simple shopping cart.
 The subject example is a fiction toy store.
 Feutures of the app are displaying data all or in different categories.
 An client must login first to order a product and add product in shopping cart.
